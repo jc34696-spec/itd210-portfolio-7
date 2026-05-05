@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media | Big Fit City Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .media-section {
+            max-width: 900px;
+            margin: 3rem auto 2.5rem auto;
+            background: #181818;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            padding: 2.5rem 2rem 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1);
+        }
+        .media-title {
+            color: #ff2d2d;
+            font-size: 2.3rem;
+            font-weight: 900;
+            margin-bottom: 1.2rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px #ff2d2d40;
+            animation: titlePop 1.2s cubic-bezier(.77,0,.18,1) forwards;
+        }
+        .media-desc {
+            color: #ededed;
+            font-size: 1.15rem;
+            text-align: center;
+            margin-bottom: 2.2rem;
+            opacity: 0;
+            animation: fadeInUp 1.2s 0.3s both;
+        }
+        .media-video {
+            width: 100%;
+            max-width: 700px;
+            max-height: 400px;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(255,45,45,0.18);
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            background: #232323;
+        }
+        @media (max-width: 800px) {
+            .media-section {
+                padding: 1.2rem 0.5rem;
+            }
+            .media-video {
+                max-width: 98vw;
+                max-height: 220px;
+            }
+        }
+    </style>
+</head>
+<body style="background: #232323; color: #ededed; font-family: 'Arial Black', Arial, sans-serif; margin: 0;">
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <header>
+        <nav>
+            <a class="nav-logo" href="index.html">Big Fit City Gym</a>
+            <div class="nav-links">
+                <a href="about me.html">About Me</a>
+                <a href="index.html">Main Page</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="media.html" style="color:#ff2d2d; background:#111;">Media</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="media-section">
+            <h1 class="media-title">Media</h1>
+            <p class="media-desc">Watch our featured gym video and see the energy at Big Fit City Gym!</p>
+            <video class="media-video" controls autoplay muted loop>
+                <source src="video/To Big Fit City.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer style="background: #181818; color: #fff; text-align: center; padding: 1.5rem 1rem;">
+        &copy; 2026 Big Fit City Gym. All rights reserved.
+</body>
+</html>

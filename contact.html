@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Big Fit City Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for contact icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-section {
+            max-width: 500px;
+            margin: 3.5rem auto 2.5rem auto;
+            background: #181818;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            padding: 2.5rem 2rem 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1);
+        }
+        .contact-title {
+            color: #ff2d2d;
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 0.7rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px #ff2d2d40;
+            animation: titlePop 1.2s cubic-bezier(.77,0,.18,1) forwards;
+        }
+        .contact-icon {
+            color: #ff2d2d;
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+            text-shadow: 0 0 18px #ff2d2dcc, 0 2px 8px #000;
+            animation: fadeInUp 1.2s 0.2s both;
+        }
+        .contact-desc {
+            color: #ededed;
+            font-size: 1.13rem;
+            text-align: center;
+            margin-bottom: 2.2rem;
+            opacity: 0;
+            animation: fadeInUp 1.2s 0.3s both;
+        }
+        .contact-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            color: #181818;
+            background: #ededed;
+            resize: vertical;
+        }
+        .contact-form textarea {
+            min-height: 90px;
+        }
+        .contact-form button {
+            background: #ff2d2d;
+            color: #ededed;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #232323;
+            color: #ff2d2d;
+        }
+        @media (max-width: 600px) {
+            .contact-section {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body style="background: #232323; color: #ededed; font-family: 'Arial Black', Arial, sans-serif; margin: 0;">
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <header>
+        <nav>
+            <a class="nav-logo" href="index.html">Big Fit City Gym</a>
+            <div class="nav-links">
+                <a href="about me.html">About Me</a>
+                <a href="index.html">Main Page</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html" style="color:#ff2d2d; background:#111;">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+            <h1 class="contact-title">Contact Us</h1>
+            <p class="contact-desc">Have a question or want to get started? Fill out the form below and we’ll get back to you soon!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
